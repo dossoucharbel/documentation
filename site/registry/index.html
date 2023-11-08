@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/registry/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>registry Class Reference - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "registry Class Reference";
+        var mkdocs_page_input_path = "registry.md";
+        var mkdocs_page_url = "/registry/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../insta/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../game/">Game Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../dev/">Developer's Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../cod.md">Coding Best Practices</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../net.md">Network Protocol Documentation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../faq.md">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">registry Class Reference</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="registry-class-reference">registry Class Reference</h1>
+<p>class for handle registry.
+include "registry.hpp"</p>
+<h3 id="public-member-functions">Public Member Functions</h3>
+<h6 id="template-sparse_array-register_component">template <class Component> sparse_array<Component> &amp;register_component()</h6>
+<p>&nbsp; This method registers a component type (Component) in the registry. It returns a reference to the array (sparse_array) associated with this component type. Each component type has a dedicated array to store specific data.</p>
+<h6 id="template-sparse_array-get_components">template <class Component> sparse_array<Component> &amp;get_components()</h6>
+<p>&nbsp; This method returns a reference to the array (sparse_array) associated with the specified component type. It is used to access data for a given component type.</p>
+<h6 id="entity_t-spawn_entity">entity_t spawn_entity()</h6>
+<p>&nbsp; This method creates a new entity and returns an entity_t object representing that entity. Entities are abstract objects used to link components together.</p>
+<h6 id="entity_t-entity_from_indexstdsize_t-idx">entity_t entity_from_index(std::size_t idx)</h6>
+<p>&nbsp; This method returns an entity according to the specified index. It can be used to obtain an existing entity from its index.</p>
+<h6 id="void-kill_entityentity_t-const-e">void kill_entity(entity_t const &amp;e)</h6>
+<p>&nbsp; This method has no implementation in the code you've provided, but is probably intended to "kill" (or delete) a specified entity.</p>
+<h6 id="template-typename-sparse_arrayreference_type-add_componententity_t-const-to-component-c">template <typename Component> typename sparse_array<Component>::reference_type add_component(entity_t const &amp;to, Component &amp;&amp;c)</h6>
+<p>&nbsp; This method adds a component (Component instance) to a specified entity. The use of &amp;&amp; indicates that the component is added as an rvalue, which can be useful for memory management.</p>
+<h6 id="template-typename-component-typename-sparse_array-componentreference_type-add_componententity_t-const-to-component-c">template &lt; typename Component&gt; typename sparse_array&lt; Component&gt;::reference_type add_component(entity_t const &amp;to, Component &amp;c)</h6>
+<p>&nbsp; This method adds a component (Component instance) to a specified entity, but this time as a lvalue (reference).</p>
+<h6 id="template-typename-component-typename-params-typename-sparse_array-componentreference_type-emplace_componententity_t-const-to-params-p">template &lt; typename Component, typename... Params&gt; typename sparse_array&lt; Component&gt;::reference_type emplace_component(entity_t const &amp;to, Params &amp;&amp;...p)</h6>
+<p>&nbsp; This method could be used to add a component (Component instance) to an entity using the emplace construct. Params variadic parameters can be used to provide construction arguments.</p>
+<h6 id="template-void-remove_componententity_t-const-from">template <typename Component> void remove_component(entity_t const &amp;from)</h6>
+<p>&nbsp; This method could be used to remove a component from a specified entity. However, this method is not implemented in the code you've provided.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

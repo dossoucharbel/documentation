@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/list/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>ListRoom Class Reference - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ListRoom Class Reference";
+        var mkdocs_page_input_path = "list.md";
+        var mkdocs_page_url = "/list/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../insta/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../game/">Game Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../dev/">Developer's Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../cod.md">Coding Best Practices</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../net.md">Network Protocol Documentation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../faq.md">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">ListRoom Class Reference</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="listroom-class-reference">ListRoom Class Reference</h1>
+<p>class for listing room for client.
+include "List_room.hpp"</p>
+<h3 id="public-member-functions">Public Member Functions</h3>
+<h6 id="listroom">ListRoom ()</h6>
+<p>&nbsp; Construct a new List Room object.</p>
+<h6 id="listroom_1">ListRoom()</h6>
+<p>&nbsp; Class constructor. It initializes members and loads the font.</p>
+<h6 id="listroom_2">~ListRoom()</h6>
+<p>&nbsp; Class destructor.</p>
+<h6 id="void-handle_eventsfevent-event-stdshared_ptr-sfrenderwindow-window">void handle_event(sf::Event event, std::shared_ptr&lt; sf::RenderWindow&gt; window)</h6>
+<p>&nbsp; This method handles events related to the user interface, such as closing the window and reacting to the hover and selection of the "Join" button.</p>
+<h6 id="stdstring-get_room_name">std::string get_room_name()</h6>
+<p>&nbsp; This method returns the name of the selected room.</p>
+<h6 id="int-get_run">int get_run()</h6>
+<p>&nbsp; This method returns the current state of the class.</p>
+<h6 id="void-set_room_namestdstring-name">void set_room_name(std::string name)</h6>
+<p>&nbsp; This method sets the name of the room the user wishes to join.</p>
+<h6 id="void-set_runint-state">void set_run(int state)</h6>
+<p>&nbsp; This method modifies the current state of the class.</p>
+<h6 id="void-draw_lpagestdshared_ptr-sfrenderwindow-window-this-method-handles-the-rendering-of-the-user-interface-including-the-display-of-the-join-button-and-the-selected-game-room">void draw_lpage(std::shared_ptr&lt; sf::RenderWindow &gt; *window) &nbsp; This method handles the rendering of the user interface, including the display of the "Join" button and the selected game room.</h6>
+<h6 id="void-set_room_listroom-room">void set_room_list(Room *room)</h6>
+<p>&nbsp; This method sets the game room to be joined.</p>
+<h6 id="void-start_lobby-window-window-registry-r-isystem-sys-int-run-stdstring-room-client-client">void start_lobby( Window &amp;window, registry &amp;r, ISystem sys, int *run, std::string room, Client &amp;client)</h6>
+<p>&nbsp; This method is used to start the game room user interface. It handles events, rendering and creation of the game room.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 #### What you'll find in this documentation
 This documentation is designed to provide you with all the essential information you need to participate in the R-Type project. You'll find out :<br><br>
+[Installation](insta.md)
 [Introduction to the Project](intro.md): A detailed presentation of the R-Type project, its objectives and background.
 
 [Game Architecture](game.md): An overview of the game's key components, architectural diagrams and interactions.
