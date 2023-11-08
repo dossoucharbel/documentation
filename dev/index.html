@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/player/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/dev/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>player Class Reference - My Docs</title>
+    <title>Developer's Guide - My Docs</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "player Class Reference";
-        var mkdocs_page_input_path = "player.md";
-        var mkdocs_page_url = "/player/";
+        var mkdocs_page_name = "Developer\u0027s Guide";
+        var mkdocs_page_input_path = "dev.md";
+        var mkdocs_page_url = "/dev/";
       </script>
     
     <!--[if lt IE 9]>
@@ -51,8 +51,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../game/">Game Architecture</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../dev/">Developer's Guide</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Developer's Guide</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -81,7 +83,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">player Class Reference</li>
+      <li class="breadcrumb-item active">Developer's Guide</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -90,25 +92,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="player-class-reference">player Class Reference</h1>
-<p>Player class.
-include "player.hpp"</p>
-<h3 id="public-member-functions">Public Member Functions</h3>
-<h6 id="playersprite-sprite-stdstring-name">Player(Sprite sprite, std::string name)</h6>
-<p>&nbsp; The Player class constructor takes two parameters:<br>
-sprite sprite The sprite associated with the player.<br>
-std::string name : The player's name.</p>
-<h6 id="player">~Player()</h6>
-<p>&nbsp; The destructor of the Player class.</p>
-<h6 id="void-move_playerinput-input">void move_player(Input input)</h6>
-<p>&nbsp; This method moves the player according to the input supplied as a parameter. Input can be used to determine the player's direction of movement, for example in response to keyboard commands.</p>
-<h6 id="sprite-get_sprite">Sprite get_sprite()</h6>
-<p>&nbsp; This method returns the sprite associated with the player. The sprite represents the player's visual appearance in the game.</p>
-<h6 id="stdstring-get_name">std::string get_name()</h6>
-<p>&nbsp; This method returns the player's name. The name can be used to identify the player in the game.</p>
+                <h4 id="welcome-to-the-r-type-developers-guide-this-guide-has-been-designed-to-help-you-understand-configure-and-contribute-to-our-r-type-game-project-whether-youre-an-experienced-developer-looking-to-dive-straight-into-source-code-or-a-novice-with-a-passion-for-game-development-this-guide-will-provide-you-with-the-essential-information-you-need-to-get-started">Welcome to the R-type "Developer's Guide". This guide has been designed to help you understand, configure and contribute to our R-type game project. Whether you're an experienced developer looking to dive straight into source code, or a novice with a passion for game development, this guide will provide you with the essential information you need to get started.</h4>
+<h4 id="purpose-of-the-guide">Purpose of the Guide :</h4>
+<p>This guide aims to provide you with :<br>
+Clear instructions for configuring the development environment.<br>
+Simple steps for cloning the project from our repository.<br>
+Information on managing dependencies and libraries.<br>
+Tips for compiling the game and running the server (if necessary).<br>
+Full documentation of essential APIs and core game elements.<br>
+Commented code examples to illustrate concepts.<br></p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../game/" class="btn btn-neutral float-left" title="Game Architecture"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -129,6 +127,8 @@ std::string name : The player's name.</p>
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../game/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
