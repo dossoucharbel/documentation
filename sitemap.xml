@@ -41,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/insta/</loc>
-         <lastmod>2023-11-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://example.com/intro/</loc>
          <lastmod>2023-11-08</lastmod>
          <changefreq>daily</changefreq>
